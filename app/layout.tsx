@@ -22,11 +22,8 @@ export default function RootLayout({
 	children: React.ReactNode;
 }>) {
 	return (
-		<html
-			lang="en"
-			className={cn('dark', 'h-full', 'antialiased', monaSans.variable, 'font-sans')}
-		>
-			<body className="min-h-full flex flex-col pattern">
+		<html lang="en" className={cn('dark', 'antialiased', monaSans.variable, 'font-sans')}>
+			<body className="min-h-full pattern">
 				{children}
 				<Toaster />
 			</body>
